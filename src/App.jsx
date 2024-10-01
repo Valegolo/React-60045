@@ -6,6 +6,7 @@ import HomeView from './views/Homeview';
 import SkincareView from './Views/SkincareView';
 import MaquillajeView from './Views/MaquillajeView';
 import CabelloView from './Views/CabelloView';
+import ProductView from './Views/ProductView/ProductView';
 
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
         <Route exact path = '/Skincare' element ={<SkincareView />} />
         <Route exact path = '/Maquillaje' element = {<MaquillajeView />} />
         <Route exact path = '/Cabello' element = {<CabelloView />} />
+        <Route exact path="/skincare/:id" element={<ProductView />} />
       </Routes>
-      <ItemListContainer greeting='Bienvenido a mi Tienda!'/>
       </BrowserRouter>
     </>
   );
