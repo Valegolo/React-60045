@@ -19,9 +19,10 @@ function App() {
         <Route exact path = '/Skincare' element ={<SkincareView />} />
         <Route exact path = '/Maquillaje' element = {<MaquillajeView />} />
         <Route exact path = '/Cabello' element = {<CabelloView />} />
-        <Route exact path="/skincare/:id" element={<ProductView />} />
+        <Route exact path="/:category/:id" element={<ProductView />} />
       </Routes>
       </BrowserRouter>
+      
     </>
   );
 }
