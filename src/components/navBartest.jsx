@@ -19,13 +19,13 @@ export default function NavBartest() {
               <Link to={'/Home'}>Home</Link>
             </button>
             <button type="button" className="btn btn-outline-primary mx-3 btn-lg">
-              <Link to={'/Skincare'}>Skincare</Link>
+              <Link to={'/category/Skincare'}>Skincare</Link>
             </button>
             <button type="button" className="btn btn-outline-primary mx-3 btn-lg">
-              <Link to={'/Maquillaje'}>Maquillaje</Link>
+              <Link to={'/category/Maquillaje'}>Maquillaje</Link>
             </button>
             <button type="button" className="btn btn-outline-primary mx-3 btn-lg">
-              <Link to={'/Cabello'}>Cabello</Link>
+              <Link to={'/category/Cabello'}>Cabello</Link>
             </button>
           </div>
           <CartWidget />

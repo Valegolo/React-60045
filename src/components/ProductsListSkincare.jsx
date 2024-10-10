@@ -2,15 +2,8 @@ import { useEffect, useState } from 'react';
 import { getProducts } from '../asynMock.js';
 import ProductCard from './ProductCard.jsx';
 
-export default function ProductsListSkincare() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    getProducts.then((data) => {
-      const filteredProducts = data.filter((product) => ['Limpiador Facial', 'Centella Water Fit', 'Centella Ampolleta'].includes(product.id));
-      setProducts(filteredProducts);
-    });
-  }, []);
+export default function ProductsListSkincare({products}) {
+ 
 
   return (
     <div className="main-content container-lg" style={{ padding: '40px 0', marginTop: '70px' }}>

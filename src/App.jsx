@@ -16,9 +16,7 @@ function App() {
       <NavBartest />
       <Routes>
         <Route exact path = '/Home' element ={<HomeView />} /> 
-        <Route exact path = '/Skincare' element ={<SkincareView />} />
-        <Route exact path = '/Maquillaje' element = {<MaquillajeView />} />
-        <Route exact path = '/Cabello' element = {<CabelloView />} />
+        <Route exact path = '/category/:categoryId' element ={<SkincareView />} />
         <Route exact path="/:category/:id" element={<ProductView />} />
       </Routes>
       </BrowserRouter>

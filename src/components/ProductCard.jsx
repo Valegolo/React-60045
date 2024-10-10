@@ -8,7 +8,7 @@ export default function ProductCard({ product }) {
         <img src={product.image} alt={product.title} />
         <p>$ {product.price}</p>
         <button type="button" class="btn btn-outline-primary">
-          <Link to={`/${product.category}/${product.id}`}>Details</Link>
+          <Link to={`/item/${product.id}`}>Details</Link>
         </button>
       </article>
     </>
